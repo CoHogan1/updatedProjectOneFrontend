@@ -1,0 +1,265 @@
+* {
+    margin: auto;
+}
+.App {
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    background-image: url('./bgs/rbowhex.gif');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+}
+.gameNav {
+    width: 75%;
+    border-radius: 20px;
+    height: 50px;
+    line-height: 25px;
+    background-color: rgba(250, 250, 250, 0.6);
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    font-weight: bold;
+}
+.gameNav > div > span{
+    color: black;
+}
+
+button {
+    background-color: blue;
+    color: cyan;
+    border: 2px solid white;
+}
+
+
+/* game css */
+.start {
+    width: 215px;
+    height: 75px;
+    line-height: 65px;
+    font-size: 2em;
+    padding: 3px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    animation: change 6s infinite ease;
+}
+@keyframes change {
+    0% {
+        background: red;
+        border: 3px solid white;
+    }
+    15%{
+        background: orange;
+        border: 6px solid black;
+    }
+    30%{
+        background: yellow;
+        border: 3px solid white;
+    }
+    45%{
+        background: green;
+        border: 6px solid black;
+    }
+    60%{
+        background: blue;
+        border: 3px solid white;
+    }
+    75%{
+        background: purple;
+        border: 6px solid black;
+    }
+    90%{
+        background: black;
+        color: white;
+        border: 3px solid white;
+    }
+    100%{
+        background: black;
+        color: white;
+        border: 3px solid;
+    }
+}
+.box{
+    font-size: 150%;
+    font-weight: bold;
+    margin: auto;
+    margin-left: 5px;
+    margin-top: 5px;
+    border: 2px solid blue;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    /* coolest part :) */
+    transition: background-color 0.3s linear;
+}
+.boxContainer{
+    width: 90vw;
+    height: 48vh;
+}
+
+.allBoxes {
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 85%;
+    background-color: rgba(250,250,250, 0.6);
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 20px;
+    text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+}
+.box{
+    width: 24%;
+    height: 130px;
+    line-height: 120px;
+    font-size: 2em;
+    border-radius: 30px;
+}
+
+.chosenColor {
+    background-color: rgba(250,250,250, 0.6);
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-shadow: -1px 1px 0 white, 1px 1px 0 white, 1px -1px 0 white, -1px -1px 0 white;
+    border-radius: 20px 20px 0 0;
+}
+
+/* end game css */
+
+
+
+/* login form css */
+form {
+    background-color: rgba(150,150,150, 0.7);
+    width: 500px;
+    padding: 10px;
+    border: 2px solid white;
+    font-size: 2em;
+    margin-top: 10%;
+
+}
+
+h3 {
+    width: 100%;
+    padding-bottom: 10px;
+}
+label {
+    display: inline-block;
+    width: 29%;
+    text-align: right;
+}
+input {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 58%;
+    height: 35px;
+}
+
+.logREG {
+    background-color: lightgrey;
+    width: 200px;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.inout {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 7px;
+    margin-top: 4%;
+}
+/* end login form css */
+
+
+ul {
+    background-color: white;
+    width: 200px;
+    list-style: none;
+    margin: auto;
+}
+
+.highscores {
+    background-color: rgba(200,200,200, 0.7);
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-top: -100px;
+
+}
+.score {
+    background-color: rgb(112,244,200);
+    margin-bottom: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+.logout{
+    border: 3px solid red;
+    margin-left: 90%;
+    margin-top: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+
+}
+
+.settings {
+    background-color: rgba(250, 250, 250, 0.6);
+    width: 70%;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding: 3px;
+    margin-bottom: 20px;
+
+}
+.setBut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.setBut>button{
+    width: 120px;
+    height:50px;
+    font-size: 25px;
+}
+
+.settings>h2{
+    padding: 5px;
+}
+
+.footer {
+    /* margin-top: 2vh; */
+    position: absolute;
+    width: 100vw;
+    bottom: 0;
+    height: 100px;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    color: lime;
+}
+a:visited {
+    color: white;
+}
+
+.copy:before{
+    color: white;
+}
+.copy:active{
+    color: green;
+    font-size: 20px;
+}
+.copy:after {
+    color:white;
+}
